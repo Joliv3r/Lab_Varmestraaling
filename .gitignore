@@ -1,0 +1,11 @@
+# For not pushing all files for rendering .tex to pdf
+*.aux
+*.fls
+*.out
+*.gz
+*.fdb_latexmk
+*.log
+*.dvi
+*.rip
+**/.auctex-auto/
+**/.ipynb_checkpoints/
