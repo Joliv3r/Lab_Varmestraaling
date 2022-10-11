@@ -9,3 +9,4 @@
 *.rip
 **/.auctex-auto/
 **/.ipynb_checkpoints/
+**/.~*
