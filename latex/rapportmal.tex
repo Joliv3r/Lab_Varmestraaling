@@ -123,11 +123,28 @@ Sammendraget er en kort og konsis oppsummering av innholdet i rapporten. Sammend
 
 
 \section{Introduksjon}
+Stefan-Boltzmanns lov er en viktig relasjon i fysikken, som forbinder emittert varmeenergi  fra et svart legeme, med dets temperatur. Den ble først formulert av Joseph Stefan i 1879, og utledet av Ludwig Boltzmann fem år senere (INSERT KILDE). I dette forsøket skal vi studere emissiviteten til ulike overflater ved ulike temperaturer, i tillegg til å verifisere Stefan-Boltzmanns lov ved å sjekke forholdet mellom temperatur og emittert varme fra et objekt.
+
 Her begynner den egentlige rapporten. Mer informasjon om hva de enkelte delene av rapporten skal inneholde finnes på nettsiden til laben~\cite{labside}. På slutten av forrige setning ser vi et eksempel på en referanse. Her er et eksempel på en referanse til læreboka~\cite{Young2016}. Referanselisten kommer til slutt i rapporten. I denne malen har vi brukt \textsc{Bib}\TeX\ til å formatere referansene, men det er også mulig å formatere dem manuelt direkte i \texttt{tex}-filen. 
 % BibTeX er det programmet som tradisjonelt brukes til automatisert referansehåndtering i LaTeX. Den mest moderne måten å håndtere referanser på er pakken biblatex, men den kan ikke brukes sammen med elsarticle.
 
 
+
 \section{Teori}
+Et svart legeme er et objekt som absorberer all innkommende strålingsenergi, uavhengig av bølgelengden. Dersom objektet er i termisk likevekt, blir det totalt sett hverken tilført eller avgitt energi. Det vil si at objektet må emittere like mye stråling som det absorberer for å oppnå likevekt. For et svart legeme betyr dette at den emitterte strålingsenergien er lik den absorberte. Forholdet mellom den emitterte energien og det svarte legemets temperatur er gitt ved Stefan-Boltzmanns lov:
+
+\begin{equation}
+  j = \sigma T^4
+\label{eq:SB} % Merkelappen til ligningen er det navnet vi bruker når vi skal referere til ligningen senere.
+\end{equation}
+
+Her er $\sigma = 5.67\cdot 10^{-8}Wm^{-2}K^{-4}$ Stefan-Boltzmann-konstanten. Dersom dette skal gjelde for et objekt med vilkårlig emissivitet $\epsilon$, må vi justere til
+
+\begin{equation}
+  j = \epsilon\sigma T^4
+\label{eq:SBepsilon} % Merkelappen til ligningen er det navnet vi bruker når vi skal referere til ligningen senere.
+\end{equation}
+
 I denne malen bruker vi teoridelen av rapporten til å gi noen eksempler på hvordan vi kan formatere ligninger og hvordan vi kan referere til dem. Svingetiden til en rektangulær pendel med uniform massefordeling kan uttrykkes som 
 \begin{equation}
 T=2\pi\sqrt{\frac{r^2+h^2}{gh}},
