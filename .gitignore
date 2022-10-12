@@ -7,6 +7,9 @@
 *.log
 *.dvi
 *.rip
+*.bbl
+*.blg
+*.spl
 **/.auctex-auto/
 **/.ipynb_checkpoints/
 **/.~*
