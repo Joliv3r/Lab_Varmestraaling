@@ -131,7 +131,7 @@ Her begynner den egentlige rapporten. Mer informasjon om hva de enkelte delene a
 
 
 \section{Teori}
-Et svart legeme er et objekt som absorberer all innkommende strålingsenergi, uavhengig av bølgelengden. Dersom objektet er i termisk likevekt, blir det totalt sett hverken tilført eller avgitt energi. Det vil si at objektet må emittere like mye stråling som det absorberer for å oppnå likevekt. For et svart legeme betyr dette at den emitterte strålingsenergien er lik den absorberte. Forholdet mellom den emitterte energien og det svarte legemets temperatur er gitt ved Stefan-Boltzmanns lov:
+Et svart legeme er et objekt som absorberer all innkommende strålingsenergi, uavhengig av bølgelengden. Dersom objektet er i termisk likevekt, blir det totalt sett hverken tilført eller avgitt energi. Det vil si at objektet må emittere like mye stråling som det absorberer for å oppnå likevekt. For et svart legeme betyr dette at den emitterte strålingsenergien er lik den absorberte. Forholdet mellom den emitterte effekten per flateenhet, $j$, og det svarte legemets temperatur er gitt ved Stefan-Boltzmanns lov:
 
 \begin{equation}
   j = \sigma T^4
@@ -145,7 +145,18 @@ Her er $\sigma = 5.67\cdot 10^{-8}Wm^{-2}K^{-4}$ Stefan-Boltzmann-konstanten. De
 \label{eq:SBepsilon} % Merkelappen til ligningen er det navnet vi bruker når vi skal referere til ligningen senere.
 \end{equation}
 
-I denne malen bruker vi teoridelen av rapporten til å gi noen eksempler på hvordan vi kan formatere ligninger og hvordan vi kan referere til dem. Svingetiden til en rektangulær pendel med uniform massefordeling kan uttrykkes som 
+[TEORI LESLIEKUBE?]
+
+For å måle temperaturen til glødetråden i en Stefan-Boltzmann-lampe, kan følgende relasjon brukes:
+
+\begin{equation}
+  T=T_0+\frac{R-R_0}{\alpha R_0}
+\label{eq:TempMetall} 
+\end{equation}
+Her er $\alpha=4.5\cdot 10^{-3}K^{-1}$ temperaturkoeffisienten til wolfram. $R_0$ er motstanden ved referansetemperatur $T_0$, og $R=\frac{V}{I}$ er motstand ved temperatur $T$. Siden denne relasjonen i utgangspunktet gjelder kun for små temperaturvariasjoner i metallet, må vi bruke relativ motstand $R/R_0$, og lese av temperaturen til wolframtråden fra tabell.
+
+En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved bruk av Kirchhoffs lover i lag med flere resistorer, kan unøyaktigheten i målingen presses ned mot veldig lav feilmargin. Dette passer fint til måling av motstanden i Stefan-Boltzmann-lampenved romtemperatur, spesielt med tanke på at feilmarginen i denne målingen vil forplante seg betydlig i resultatene.
+
 \begin{equation}
 T=2\pi\sqrt{\frac{r^2+h^2}{gh}},
 \label{eq:svingetid} % Merkelappen til ligningen er det navnet vi bruker når vi skal referere til ligningen senere.
@@ -199,6 +210,12 @@ Vi får ofte bruk for subskript for å angi variabelnavn, for eksempel for å sk
 
 
 \section{Metode}
+Dette forsøket omfatter i hovesak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av en Lesliekube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved varme temperaturer.
+
+En Lesliekube er et objekt med fire ulike overflater; svart, hvit, upolert aluminium og blankt aluminium (speil). Den varmes opp innvendig ved hjelp av en glødepære, og temperaturen til kuben kan lesest av i tabell basert på resistansen i en innebygd termistor. Når resistansen stabiliserer seg på en gitt verdi, har kuben oppnådd termostatisk likevekt. Fra dette kan det måles avgitt varmestråling med en strålingssensor, og med det undersøke hvordan dette avhenger med overflate og temperatur.
+
+For å verifisere Stefan-Boltzmanns lov, må vi måle stråling fra et objekt som emitterer varmestråling. For å unngå stor påvirkning fra omgivelser, gir det mening å bruke et objekt med høy temperatur, for eksempel en Stefan-Boltzmann-lampe. Denne glødelampen inneholder en wolframtråd som kan bli opp mot 3000K, betydelig høyere enn romtemperatur. Ved ulike spenninger måles strøm og strålingsintensitet av, slik at vi kan hente ut temperaturen til tråden.
+
 I metodedelen skal det være med en figur som viser det eksperimentelle oppsettet. Her viser vi et eksempel på en figur som er hentet inn fra en PDF-fil. Flere detaljer om hvordan du kan lage figurer finner du på nettsiden~\cite{labside}. Vi kan referere til figurer på samme måte som vi refererer til ligninger. Nå refererer vi til \autoref{fig:pendel}.
 % Legg merke til at vi nå bruker \autoref{} og ikke \eqref{}. Figurreferansen skal ikke ha parenteser rundt seg. \autoref hjelper oss i tillegg med å sette inn riktig navn på objektet vi refererer til. 
 
