@@ -163,28 +163,27 @@ En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved bruk
 
 
 \section{Metode}
-Dette forsøket omfatter i hovesak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av en Lesliekube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved varme temperaturer.
+Dette forsøket omfatter i hovedsak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av en Leslies kube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved varme temperaturer.
 
-En Lesliekube er et objekt med fire ulike overflater; svart, hvit, upolert aluminium og blankt aluminium (speil). Den varmes opp innvendig ved hjelp av en glødepære, og temperaturen til kuben kan lesest av i tabell basert på resistansen i en innebygd termistor. Når resistansen stabiliserer seg på en gitt verdi, har kuben oppnådd termostatisk likevekt. Fra dette kan det måles avgitt varmestråling med en strålingssensor, og med det undersøke hvordan dette avhenger med overflate og temperatur.
+Leslies kube er et objekt med fire ulike overflater; svart, hvit, upolert aluminium og blankt aluminium (speil). Den varmes opp innvendig ved hjelp av en glødepære, og temperaturen til kuben kan leses av i tabell basert på resistansen i en innebygd termistor. Når resistansen stabiliserer seg på en gitt verdi, har kuben oppnådd termostatisk likevekt. Fra dette kan det måles avgitt varmestråling med en strålingssensor, og med det undersøke hvordan dette avhenger med overflate og temperatur.
 
-For å verifisere Stefan-Boltzmanns lov, må vi måle stråling fra et objekt som emitterer varmestråling. For å unngå stor påvirkning fra omgivelser, gir det mening å bruke et objekt med høy temperatur, for eksempel en Stefan-Boltzmann-lampe. Denne glødelampen inneholder en wolframtråd som kan bli opp mot 3000K, betydelig høyere enn romtemperatur. Ved ulike spenninger måles strøm og strålingsintensitet av, slik at vi kan hente ut temperaturen til tråden.
-
-I metodedelen skal det være med en figur som viser det eksperimentelle oppsettet. Her viser vi et eksempel på en figur som er hentet inn fra en PDF-fil. Flere detaljer om hvordan du kan lage figurer finner du på nettsiden~\cite{labside}. Vi kan referere til figurer på samme måte som vi refererer til ligninger. Nå refererer vi til \autoref{fig:pendel}.
-% Legg merke til at vi nå bruker \autoref{} og ikke \eqref{}. Figurreferansen skal ikke ha parenteser rundt seg. \autoref hjelper oss i tillegg med å sette inn riktig navn på objektet vi refererer til. 
-
-\begin{figure}[tbp] 
-% Alternativene inne i klammene angir hvilke av følgende plasseringer du vil tillate:
-% h = here, t = top, b = bottom, p = separat, ! = forsøk å overstyre preferansene til LaTeX.
-% Klammeparanteser brukes generelt for valgfrie argumenter i LaTeX. Om vi hadde utelatt "[tbp]" hadde LaTeX falt tilbake til standardinnstillingene, som også er tbp.
-\centering % Denne kommandoen sentrerer figuren i kolonnen.
-\includegraphics[width=0.15\textwidth]{pendel-oppdatert.pdf}
-% Her har vi brukt width=0.15\textwidth for å angi figurbredde som en andel av den delen av arkbredden som inneholder tekst (sidebredde minus marger).
-% Hvis du angir bareienten width eller height, beholdes originalfigurens proporsjoner. (Dette anbefales.)
-\caption{Her skriver du figurteksten. Merk at denne kommer under figuren. Naturligvis avslutter vi figurteksten med punktum.}
-\label{fig:pendel} % Som med ligningen er dette det interne navnet på figuren.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/leslikube.pdf}
+  \caption{Utstyrsoppsett. Leslies kube er koblet til et strømuttak og et ohmmeter, varmestrålingssensoren er koblet til et voltemeter.}
+  \label{fig:Leslikube}
 \end{figure}
 
-Husk at figurteksten skal forklare alle de viktige elementene i figuren; leseren skal kunne forstå figuren ved hjelp av figurteksten alene og slippe i lete i brødteksten etter forklaringer. 
+For Leslies kube kobles utstyret opp som vist i \autoref{fig:Leslikube} og skrur på lampen i Leslies kuben på høy intesitet først før den skrus ned når ohmmeteteret viser omtrent $\SI{40}{\kilo\ohm}$ før intensiteten skrus ned. Venter så til det oppnås en form for termisk likevekt og måler så varmestråling ved å lese av voltmeteret koblet til sensoren på hver av de fire sidene og skrur så opp intensiteten, venter i omtrent fem minutter til det er tilnærmet termisk likevekt og måler så varmestråling på nytt. Gjør dette fire ganger.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{figures/lampe.pdf}
+  \caption{Utstyrsoppsett. Kobler et voltmeter paralelt med Stefan-Boltzmann-lampen i en krets med et ammeter og en spenningskilde som kobles til et strømuttak. Kobler et voltmeter til sensoren.}
+  \label{fig:SBlampe}
+\end{figure}
+
+Kobler opp utstyr som vist i \autoref{fig:SBlampe}. Setter spenningen til $\SI{1}{\volt}$ og måler så av strøm og spenning i kretsen med Stefan-Boltzmann-lampen og spenningen i varmestrålingssensoren. Setter så opp spenningen med $\SI{1}{\volt}$ og gjør det samme til og med $\SI{12}{\volt}$.
 
 
 \section{Resultater}
