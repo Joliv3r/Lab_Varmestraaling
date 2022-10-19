@@ -153,13 +153,29 @@ Her er $\alpha=\SI{4,5e-3}{\kelvin^{-1}}$ temperaturkoeffisienten til wolfram. $
   \left( \Delta \frac{R}{R_{0}} \right) ^{2} = \frac{\Delta R^{2}}{R_{0}^{2}} + \frac{R^{2} \Delta R_{0}^{2}}{R_{0}^{4}}.
 \end{equation}
 
-En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved bruk av Kirchhoffs lover i lag med flere resistorer, kan unøyaktigheten i målingen presses ned mot veldig lav feilmargin. Dette passer fint til måling av motstanden i Stefan-Boltzmann-lampenved romtemperatur, spesielt med tanke på at feilmarginen i denne målingen vil forplante seg betydlig i resultatene. Feilmarginen i $R_{0}$ kan da finnes ved Gauss feilforplantning
+\begin{figure}
+  \centering
+  \includegraphics[width=0.30\textwidth]{wheat.jpg}
+  \caption{Wheatstonebro \cite{wheatstone}. $R_{1}, R_{2}, R_{3}$ er kjente størrelser som kan justeres helt til det ikke går strøm gjennom $G$.}
+  \label{fig:Wheatstone}
+\end{figure}
+
+En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved å justere resistansene vist i \autoref{fig:Wheatstone} til strømmen gjennom $G$ er 0, så kan en ved Krichoffs lover finne resistansen
+\begin{equation}
+  \label{eq:Wheatstone}
+  R_{x} = \frac{R_{3} R_{2}}{R_{1}}.
+\end{equation}
+Siden $R_{x}$ her vil referere til resistansen i resistoren i tillegg til i ledningene kan en finne resistansen i resistoren $R_{0}$ ved å kople den ut og finne resistansen i ledningene $R_{x0}$ og har dermed
+\begin{equation}
+  \label{eq:WheatstoneReal}
+  R_{0} = R_{x} - R_{x0}.
+\end{equation}
+Feilmarginen i $R_{0}$ kan da finnes ved Gauss feilforplantning
 \begin{align}
   \label{eq:ErrorBridge}
-  \Delta R_{0}^{2} =& \frac{(R_{x1} - R_{x0})^{2}}{R_{1}^{2}} \left( \Delta R_{3}^{2} + \frac{R_{3}^{2} \Delta R_{1}^{2}}{R_{1}^{2}} \right) \notag \\
-  &+ \frac{R_{3}^{2}}{R_{1}^{2}} \left( \Delta R_{x1}^{2} + \Delta R_{x0}^{2} \right).
+  \Delta R_{0}^{2} =& \frac{(R_{x} - R_{x0})^{2}}{R_{1}^{2}} \left( \Delta R_{3}^{2} + \frac{R_{3}^{2} \Delta R_{1}^{2}}{R_{1}^{2}} \right) \notag \\
+  &+ \frac{R_{3}^{2}}{R_{1}^{2}} \left( \Delta R_{x}^{2} + \Delta R_{x0}^{2} \right).
 \end{align}
-
 
 
 \section{Metode}
