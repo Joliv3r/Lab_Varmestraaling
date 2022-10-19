@@ -105,15 +105,8 @@ group-digits = false,
 \title{Mal for rapport til laboratorium i fysikk}
 
 % I forfatterlisten legger vi inn "ikke-brytende" mellomrom etter initialene
-\author[fysikk]{S.~Kragset}
-\author[fysikk]{I.~B.~Sperstad}
-\author[fysikk]{F.~A.~Martinsen}
-\author[fysikk]{M.~Farstad}
-\author[fysikk]{T.~A.~Bojesen}
-\author[fysikk]{P.~G.~Ellingsen}
-\author[fysikk]{J.~A.~Støvneng}
-\author[fysikk]{V.~Risinggård}
-\address[fysikk]{Institutt for fysikk, Norges teknisk-naturvitenskapelige universitet, 7491 Trondheim.}
+\author{J.~O.~Bruun}
+\author{S.~Klyve}
 
 \begin{abstract}
 Sammendraget er en kort og konsis oppsummering av innholdet i rapporten. Sammendraget er den delen av rapporten som skal skrives sist, når du har full kontroll på alt innholdet. En god lengde for et sammendrag er 4--5 setninger. I løpet av disse setningene skal forsøket introduseres, du skal fortelle hvilke metoder som ble brukt, resultatene skal presenteres og du må fortelle kort hva resultatene betyr. Om resultatet eksisterer i form av et tallsvar skal dette oppgis med tilhørende usikkerhet. 
@@ -124,6 +117,7 @@ Sammendraget er en kort og konsis oppsummering av innholdet i rapporten. Sammend
 
 \section{Introduksjon}
 Stefan-Boltzmanns lov er en viktig relasjon i fysikken, som forbinder emittert varmeenergi  fra et svart legeme, med dets temperatur. Den ble først formulert av Joseph Stefan i 1879, og utledet av Ludwig Boltzmann fem år senere (INSERT KILDE). I dette forsøket skal vi studere emissiviteten til ulike overflater ved ulike temperaturer, i tillegg til å verifisere Stefan-Boltzmanns lov ved å sjekke forholdet mellom temperatur og emittert varme fra et objekt.
+
 
 Her begynner den egentlige rapporten. Mer informasjon om hva de enkelte delene av rapporten skal inneholde finnes på nettsiden til laben~\cite{labside}. På slutten av forrige setning ser vi et eksempel på en referanse. Her er et eksempel på en referanse til læreboka~\cite{Young2016}. Referanselisten kommer til slutt i rapporten. I denne malen har vi brukt \textsc{Bib}\TeX\ til å formatere referansene, men det er også mulig å formatere dem manuelt direkte i \texttt{tex}-filen. 
 % BibTeX er det programmet som tradisjonelt brukes til automatisert referansehåndtering i LaTeX. Den mest moderne måten å håndtere referanser på er pakken biblatex, men den kan ikke brukes sammen med elsarticle.
@@ -141,11 +135,9 @@ Et svart legeme er et objekt som absorberer all innkommende strålingsenergi, ua
 Her er $\sigma = \SI{5,67e-8}{\watt\metre^{-2}\kelvin^{-4}}$ Stefan-Boltzmann-konstanten. Dersom dette skal gjelde for et objekt med vilkårlig emissivitet $\epsilon$, må vi justere til
 
 \begin{equation}
-  j = \epsilon\sigma T^4
+  j = \epsilon\sigma T^4.
 \label{eq:SBepsilon} % Merkelappen til ligningen er det navnet vi bruker når vi skal referere til ligningen senere.
 \end{equation}
-
-[TEORI LESLIEKUBE?]
 
 For å måle temperaturen til glødetråden i en Stefan-Boltzmann-lampe, kan følgende relasjon brukes:
 
@@ -153,60 +145,21 @@ For å måle temperaturen til glødetråden i en Stefan-Boltzmann-lampe, kan fø
   T=T_0+\frac{R-R_0}{\alpha R_0}
 \label{eq:TempMetall} 
 \end{equation}
-Her er $\alpha=\SI{4,5e-3}{\kelvin^{-1}}$ temperaturkoeffisienten til wolfram. $R_0$ er motstanden ved referansetemperatur $T_0$, og $R=\frac{V}{I}$ er motstand ved temperatur $T$. Siden denne relasjonen i utgangspunktet gjelder kun for små temperaturvariasjoner i metallet, må vi bruke relativ motstand $R/R_0$, og lese av temperaturen til wolframtråden fra tabell.
 
-En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved bruk av Kirchhoffs lover i lag med flere resistorer, kan unøyaktigheten i målingen presses ned mot veldig lav feilmargin. Dette passer fint til måling av motstanden i Stefan-Boltzmann-lampenved romtemperatur, spesielt med tanke på at feilmarginen i denne målingen vil forplante seg betydlig i resultatene.
+Her er $\alpha=\SI{4,5e-3}{\kelvin^{-1}}$ temperaturkoeffisienten til wolfram. $R_0$ er motstanden ved referansetemperatur $T_0$, og $R=\frac{V}{I}$ er motstand ved temperatur $T$. Siden denne relasjonen i utgangspunktet gjelder kun for små temperaturvariasjoner i metallet, må vi bruke relativ motstand $R/R_0$, og lese av temperaturen til wolframtråden fra tabell. Fra dette finner vi usikkerheten i den relative resistansen ved Gauss feilforplantning
 
 \begin{equation}
-T=2\pi\sqrt{\frac{r^2+h^2}{gh}},
-\label{eq:svingetid} % Merkelappen til ligningen er det navnet vi bruker når vi skal referere til ligningen senere.
+  \label{eq:ErrorRelRes}
+  \left( \Delta \frac{R}{R_{0}} \right) ^{2} = \frac{\Delta R^{2}}{R_{0}^{2}} + \frac{R^{2} \Delta R_{0}^{2}}{R_{0}^{4}}.
 \end{equation}
-der $g$ er tyngdens akselerasjon og $h$ er avstanden fra opphengspunktet til massesenteret, som vist i \autoref{fig:pendel}. Treghetsradien $r$ er gitt ved
-\begin{equation}
-r=\sqrt{\frac{l^2+b^2}{12}},
-\label{eq:treghetsradius}
-\end{equation}
-der $l$ er lengden og $b$ er bredden til pendelen.
 
-% Legg merke til at alle symbolene i ligningen står i kursiv. Bokstaver vil alltid stå i kursiv når vi er i matematikkmodus. I et tekstavsnitt kan vi stille om til mattemodus ved å bruke dollartegn "$", slik vi gjorde for tyngdeakselerasjonen g i avsnittet over. Det er ikke god skikk å bruke vanlig kursivering (\textit{g}) til dette, da LaTeX internt skiller mellom tekstfonter og mattefonter.
-% Vektorer kan markeres med en pil ved å skrive \vec{v} i matematikk-modus. For å bruke fet kursiv font til å markere vektorer, skriv \bm{v} i matematikk-modus. 
-% Spesielle matematiske funksjoner som skal skrives med rett font finnes som egne makroer i LaTeX. Vi kan for eksempel skrive \sin eller \ln i matematikk-modus. 
-
-Disse ligningene kan vi nå henvise til, for eksempel kan vi si at vi skal bruke ligning
-\eqref{eq:svingetid} til å måle tyngdeakselerasjonen $g$.
-
-% Merk at ligningsreferanser alltid skal være omsluttet av parenteser, og det ordnes automatisk når vi bruker kommandoen "\eqref{}". Hvis man ønsker en referanse uten parenteser, bruker man kommandoen "\ref{}". Her kunne vi altså også ha skrevet "(\ref{eq:svingetid})", men hvorfor gjøre det vanskelig når man kan gjøre det enkelt?
-
-Noen ganger trenger vi litt større oppstillinger av ligninger som går over flere linjer, og de kan for eksempel formateres slik som dette:
+En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved bruk av Kirchhoffs lover i lag med flere resistorer, kan unøyaktigheten i målingen presses ned mot veldig lav feilmargin. Dette passer fint til måling av motstanden i Stefan-Boltzmann-lampenved romtemperatur, spesielt med tanke på at feilmarginen i denne målingen vil forplante seg betydlig i resultatene. Feilmarginen i $R_{0}$ kan da finnes ved Gauss feilforplantning
 \begin{align}
-\left(\frac{\Delta r}{r}\right)^2=&\left(\frac{1}{r}\frac{\partial r}{\partial l}\Delta l\right)^2+\left(\frac{1}{r}\frac{\partial r}{\partial b}\Delta b\right)^2 \notag \\
-=&\left(\frac{l\Delta l}{l^2+b^2}\right)^2+\left(\frac{b\Delta b}{l^2+b^2}\right)^2.
-\label{eq:feilforplantning}
+  \label{eq:ErrorBridge}
+  \Delta R_{0}^{2} =& \frac{(R_{x1} - R_{x0})^{2}}{R_{1}^{2}} \left( \Delta R_{3}^{2} + \frac{R_{3}^{2} \Delta R_{1}^{2}}{R_{1}^{2}} \right) \notag \\
+  &+ \frac{R_{3}^{2}}{R_{1}^{2}} \left( \Delta R_{x1}^{2} + \Delta R_{x0}^{2} \right).
 \end{align}
 
-% Her har vi brukt align-miljøet til å sette ligningen opp over flere linjer. 
-% Legg merke til at ampersanden (&) ikke vises i pdf-dokumentet. Dette tegnet markerer to punkter (i ulike linjer) som skal justeres vertikalt i align-miljøet. 
-% Kommandoen \\ brukes til å skifte linje. (Denne kan også brukes ellers i LaTeX, men det anbefales som regel ikke. For å sørge for at bare en av linjene får ligningsnummer, bruker vi kommandoen \notag for den første linjen.
-
-Generelt skal alle ligninger ha ligningsnummer, men om vi skal vise en utregning eller ønsker å nevne noe i forbifarten som trenger den ekstra plassen vi har i en ligning kan det være greit å sløyfe ligningsnummeret. For eksempel vil vi nå kommentere at dersom $(l \Delta l)^2 \gg (b \Delta b)^2$ så får vi
-\begin{equation*}
-\frac{\Delta r}{r}\approx\frac{\Delta l}{l}
-\end{equation*}
-fra ligning \eqref{eq:feilforplantning}. 
-
-% Her brukte vi miljøet equation* for å unngå variabelnavn. Vi kunne også bare skrevet
-% \[
-% \frac{\Delta r}{r}\approx\frac{\Delta l}{l},
-% \]
-% eller (noe mer tungvindt)
-% \begin{equation}
-% \frac{\Delta r}{r}\approx\frac{\Delta l}{l}. \notag
-% \end{equation}
-% Om vi ønsket å unngå ligningsnummeret helt i align-miljøet over også, kunne vi skrevet align*.
-
-Vi får ofte bruk for subskript for å angi variabelnavn, for eksempel for å skille mellom $l_1$ og $l_2$. Dersom subskriptet er et ord og ikke en indeks, skal det brukes rett font, slik som i $l_\text{meterstav}$.
-
-% Til slutt kan du legge merke til at vi i teoridelen (og ellers i rapporten) har brukt normal tegnsetting (komma, punktum, osv.) også i ligningene. Det gjør vi fordi ligningene er en del av teksten. 
 
 
 \section{Metode}
