@@ -139,6 +139,8 @@ Her er $\sigma = \SI{5,67e-8}{\watt\metre^{-2}\kelvin^{-4}}$ Stefan-Boltzmann-ko
 \label{eq:SBepsilon} % Merkelappen til ligningen er det navnet vi bruker når vi skal referere til ligningen senere.
 \end{equation}
 
+Leslies kube er et objekt med fire ulike overflater; svart, hvit, upolert aluminium og blankt aluminium (speil). Den varmes opp innvendig ved hjelp av en glødepære, og temperaturen til kuben kan leses av i tabell basert på resistansen i en innebygd termistor. Når resistansen stabiliserer seg på en gitt verdi, har kuben oppnådd termostatisk likevekt. Fra dette kan det måles avgitt varmestråling med en strålingssensor, og med det undersøke hvordan dette avhenger med overflate og temperatur.
+
 For å måle temperaturen til glødetråden i en Stefan-Boltzmann-lampe, kan følgende relasjon brukes:
 
 \begin{equation}
@@ -152,6 +154,7 @@ Her er $\alpha=\SI{4,5e-3}{\kelvin^{-1}}$ temperaturkoeffisienten til wolfram. $
   \label{eq:ErrorRelRes}
   \left( \Delta \frac{R}{R_{0}} \right) ^{2} = \frac{\Delta R^{2}}{R_{0}^{2}} + \frac{R^{2} \Delta R_{0}^{2}}{R_{0}^{4}}.
 \end{equation}
+
 
 \begin{figure}
   \centering
@@ -178,10 +181,10 @@ Feilmarginen i $R_{0}$ kan da finnes ved Gauss feilforplantning
 \end{align}
 
 
+
 \section{Metode}
 Dette forsøket omfatter i hovedsak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av en Leslies kube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved varme temperaturer.
 
-Leslies kube er et objekt med fire ulike overflater; svart, hvit, upolert aluminium og blankt aluminium (speil). Den varmes opp innvendig ved hjelp av en glødepære, og temperaturen til kuben kan leses av i tabell basert på resistansen i en innebygd termistor. Når resistansen stabiliserer seg på en gitt verdi, har kuben oppnådd termostatisk likevekt. Fra dette kan det måles avgitt varmestråling med en strålingssensor, og med det undersøke hvordan dette avhenger med overflate og temperatur.
 
 \begin{figure}
   \centering
@@ -203,63 +206,24 @@ Kobler opp utstyr som vist i \autoref{fig:SBlampe}. Setter spenningen til $\SI{1
 
 
 \section{Resultater}
-Ofte vil vi skrive inn enkeltmålinger i resultatdelen. Da er det viktig å angi usikkerhet. For eksempel kan lengden til pendelen være $l=\SI{1000,015(5)}{\milli\metre}$. 
-% Her har vi brukt kommandoen \SI fra siunitx-pakken for å presentere måltall og enheter på en typografisk korrekt måte. Til tall uten enhet trenger vi en kommando med bare ett argument --  da bruker vi \num{<tall>}. Om vi skal oppgi en enhet uten et måltall bruker vi \si{<enhet>}. Søk opp "siunitx" på CTAN for flere detaljer.
-% Legg spesielt merke til hvordan man skriver usikkerheten, og hvordan denne kommer frem i den kompilerte pdfen. 
-Vi kan også skrive opp usikkerheten separat. I dette tilfellet har vi $\Delta l=\SI{5e-3}{\milli\metre}$. Alternativt kunne vi skrevet denne usikkerheten som $\Delta l=\SI{5e-6}{\metre}$ eller $\Delta l=\SI{5}{\micro\metre}$.
+Ser først på dataen funnet ved Leslies kube som vist i \autoref{fig:LeslieResults}. Avlesninger av voltmeteret koblet til varmestrålingssensoren viser intensiteten og ved avlesninger av ohmmeteret finnes resistans og dermed temperatur ved avlesning av tabell. Siden temperaturen finnes ved avlesning av tabell finnes nederste og øverste grense ved avlesning av laveste resistans som kan slås opp høyere enn høyeste verdi i feilmarginintervallet, og motsatt for lavere.
 
-I resultatdelen er det ofte bruk for tabeller for å presentere måledata på en oversiktlig måte. Husk at alle måledata skal oppgis med usikkerhet! Tabell \ref{tab:ckolonner} er et godt eksempel. 
-% Merk at vi ikke brukte \autoref i begynnelsen av setningen fordi vi trengte stor forbokstav. 
-I \autoref{tab:Skolonner} ser vi et eksempel der den samme tabellen er laget på en litt annen måte. Merk at mens figurtekster står under figurene skal tabelltekster plasseres over tabellene.
-
-% Tabeller i LaTeX kan være litt vanskelig å forstå, men om du studerer eksemplene nøye blir ting forhåpentligvis litt klarere. Det viktigste du må huske på er at tabellene skrives rad for rad. Ampersand angir skiller mellom kolonner, og \\ angir slutten på raden
-\begin{table}[tbp]
-\centering % Denne kommandoen sentrerer tabellen i kolonnen. 
-\caption{Dette er den obligatoriske tabellteksten. Den kommer over tabellen. Husk at de samme reglene gjelder for utforming av tabellteksten som for utforming av figurteksten.}
-\label{tab:ckolonner}	% Merkelappen vi vil referere til.
-\begin{tabular}{cc} % Her angir det andre argumentet at vi vil ha to senterjusterte kolonner (l = left, c = center, r = right).
-\toprule % Horisontal linje som markerer toppen av tabellen
-$h$ [\si{\centi\metre}] & $g$ [\si{\metre\per\second\squared}] \\ % Merk at vi skriver variabelnavnene i kursiv. Det er fordi de er matematiske symboler, og har ingenting med at dette er kolonneoverskrifter å gjøre!
-\midrule
-20  & 9,836\,$\pm$\,0,004 \\ % Kommandoen \, gir et kort mellomrom.
-23  & 9,847\,$\pm$\,0,002 \\
-29  & 9,839\,$\pm$\,0,008 \\
-33  & 9,840\,$\pm$\,0,001 \\
-40  & 9,829\,$\pm$\,0,006 \\
-\bottomrule
-\end{tabular}
-\end{table}
-% Formatet på denne tabellen er beskrevet i "Retningslinjer for rapportskriving".
-
-% Tabeller med numerisk data skal være linjert på desimalskilletegnet. Ofte kan dette være vanskelig med en enkel c, l eller r. Her kommer heldigvis pakken siunitx til hjelp med det spesielle kolonneformatet S, som vi skal se i denne neste tabellen. 
-\begin{table}[tbp]
-\centering
-\caption{Denne tabellen har identisk innhold som den forrige, men er laget på en litt annen måte.}
-\label{tab:Skolonner}
-\begin{tabular}{SS[table-format=1.3(1)]} % S = spesielt kolonneformat håndtert av siunitx.
-\toprule
-{$h$ [\si{\centi\metre}]} & {$g$ [\si{\metre\per\second\squared}]} \\
-% Merk deg at kolonneoverskriftene er omsluttet av krøllparanteser i kolonneformatet S!
-\midrule
-20  & 9,836(4) \\
-23  & 9,847(2) \\
-29  & 9,839(8) \\
-33  & 9,840(1) \\
-40  & 9,829(6) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Selv om tabeller er hendige, er de ikke alltid den beste løsningen i resultatdelen. Det er for eksempel lettere å se om det er en sammenheng mellom avstanden fra opphengspunktet til massesenteret og verdien og usikkerheten som ble målt for tyngdeakselerasjonen dersom vi plotter resultatene i en figur. Figur \ref{fig:resultater} er et eksempel på dette. Denne presentasjonsformen blir mer aktuell dersom vi har mange resultater. 
-
-\begin{figure}[tbp]
-\centering
-\includegraphics[width=.325\textwidth]{resultater.pdf}
-\caption{Denne presentasjonsformen egner seg bedre til å tydeliggjøre trender i datagrunnlaget. Her kan det se ut som om verdien vi måler for $g$ og usikkerheten i målingene er relativt uavhengig av $h$.}
-\label{fig:resultater}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{../code/LC.pdf}
+  \caption{Leslies kube. Punktene er målinger ved de forskjellige intensitetene hvor tempereaturen er tilnærmet konstant i hver av de fire målingene ved samme intensitetsinstilling.}
+  \label{fig:LeslieResults}
 \end{figure}
 
-% Figurene og tabellene vi har brukt så langt har vært avgrenset til én kolonnebredde. Om vi trenger tabeller eller figurer som dekker hele sidebredden får vi det ved å bruke miljøene figure* og table*. 
+Videre er dataen for Stefan-Boltzmann-lampa vist i \autoref{fig:SBlampResults}. Ved avlesninger av voltmeteret koblet til sensoren finnes intensiteten og temperatur er funnet ved avlesning av resistans og ved å lese av tabell. Usikkerheten i temperaturen kommer av måleusikkerheten i resistansen og usikkerheten i resistansen ved romtemperatur som vist i \eqref{eq:ErrorRelRes}. Bruker samme metode for å finne feilmarginer som ved Leslies kube.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{../code/SB_lamp.pdf}
+  \caption{Stefan-Boltzmann-lampe. Punktene er avlesninger og den heltrukkne linja er et gjett på en fjerdegradsfunksjon.}
+  \label{fig:SBlampResults}
+\end{figure}
+
 
 \section{Diskusjon}
 Rapportskriving i \LaTeX\ gir mange muligheter. Selv om det er endel tekniske finesser som skal på plass er det viktig å huske på at god skriving og godt språk ligger til grunn for å skrive en god rapport. 
