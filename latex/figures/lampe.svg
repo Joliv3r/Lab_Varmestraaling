@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg6087"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="lampe.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6089"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0746575"
+     inkscape:cx="315.44935"
+     inkscape:cy="523.42259"
+     inkscape:window-width="1916"
+     inkscape:window-height="1036"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6084">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect6238"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path7624,0,1|#path7622,0,1|"
+       id="path-effect7626" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;paint-order:markers fill stroke"
+       d="m 52,91.692539 c 3.86987,0.02484 7.739472,0.04969 10.466224,1.340409 2.726752,1.290721 4.310665,3.846908 6.460045,5.190217 2.149379,1.343309 4.864004,1.473983 7.157445,0.398741 2.29344,-1.075242 4.165873,-3.356331 5.086845,-6.125357 0.920971,-2.769026 0.890421,-6.026057 -0.02756,-8.479857 -0.917982,-2.453799 -2.723596,-4.104222 -4.889027,-4.931551 -2.165431,-0.827329 -4.690532,-0.831279 -6.639386,0.256378 -1.948854,1.087656 -3.321049,3.266762 -6.160618,4.49317 C 60.614399,85.061097 56.307367,85.334839 52,85.608601"
+       id="path6236"
+       inkscape:original-d="m 52,91.692539 c 3.869868,0.02511 7.73947,0.04995 11.608806,0.07453 1.584243,2.556555 3.168156,5.112742 4.751835,7.668712 2.714995,0.13095 5.42962,0.26162 8.144031,0.39203 1.872771,-2.28091 3.745201,-4.562001 5.617406,-6.843394 -0.03028,-3.256897 -0.06083,-6.513928 -0.09165,-9.771287 -1.805422,-1.650225 -3.611036,-3.300648 -5.416952,-4.951368 -2.524935,-0.0037 -5.050036,-0.0076 -7.57545,-0.01185 -1.371986,2.179457 -2.744181,4.358563 -4.116668,6.537449 C 60.614417,85.061378 56.307385,85.335119 52,85.608601"
+       inkscape:path-effect="#path-effect6238"
+       sodipodi:nodetypes="cccccccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;paint-order:markers fill stroke"
+       d="m 52,91.507768 c 0.221062,-1.920894 -0.220533,-3.842052 0,-5.763475"
+       id="path6240"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;paint-order:markers fill stroke"
+       d="M 106.25546,90.266 H 94.723983"
+       id="path6254"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="M 140.79532,88 H 171 v 57.08885 l -7,-0.0323 V 92.606 h -23.5609"
+       id="path6619"
+       sodipodi:nodetypes="cccccc" />
+    <ellipse
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.359352;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path6621"
+       cx="168.26553"
+       cy="138.81125"
+       rx="9.3096313"
+       ry="9.6490231" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;paint-order:markers fill stroke;fill-opacity:1"
+       id="rect6252"
+       width="34.587925"
+       height="9.7558165"
+       x="106.25607"
+       y="85.243462" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Caladea;-inkscape-font-specification:'Caladea, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="164.47227"
+       y="143.10829"
+       id="text6627"><tspan
+         sodipodi:role="line"
+         id="tspan6625"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Caladea;-inkscape-font-specification:'Caladea, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+         x="164.47227"
+         y="143.10829">V</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 53.205879,90.379218 -9.46891,0.115414 0.196114,16.089848 74.597967,-0.90925 0.49323,40.46627 -100.605602,1.22624 -0.492687,-40.42175 19.809884,-0.24145 -0.229106,-18.796628 15.467494,-0.188526"
+       id="path6629" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 52,89.5167 -8,3e-4 V 105 h 76 v 45 H 9 V 105 H 40 V 87.793 l 12,-4.4e-5"
+       id="path7359"
+       sodipodi:nodetypes="cccccccccc" />
+    <path
+       inkscape:original-d="M 0,0"
+       inkscape:path-effect="#path-effect7626"
+       d="m 85,153 v -6 l -3,-5 v 16 z"
+       id="path7628"
+       class="UnoptimicedTransforms"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 82,158 V 142"
+       id="path7622"
+       sodipodi:nodetypes="cc"
+       class="UnoptimicedTransforms" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 85,153 v -6"
+       id="path7624"
+       sodipodi:nodetypes="cc"
+       class="UnoptimicedTransforms" />
+    <ellipse
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.359352;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="ellipse7632"
+       cx="33.829807"
+       cy="149.73085"
+       rx="9.3096313"
+       ry="9.6490231" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Caladea;-inkscape-font-specification:'Caladea, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="29.836061"
+       y="153.4335"
+       id="text8362"><tspan
+         sodipodi:role="line"
+         id="tspan8360"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+         x="29.836061"
+         y="153.4335">A</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 60,105 v 15.5 H 26 V 105"
+       id="path8416"
+       sodipodi:nodetypes="cccc" />
+    <ellipse
+       style="font-variation-settings:normal;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.359352;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="ellipse8414"
+       cx="42.563892"
+       cy="120.41086"
+       rx="9.3096313"
+       ry="9.6490231" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:Caladea;-inkscape-font-specification:'Caladea, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="38.479004"
+       y="125.16097"
+       id="text8421"><tspan
+         sodipodi:role="line"
+         id="tspan8419"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25"
+         x="38.479004"
+         y="125.16097">V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Caladea;-inkscape-font-specification:'Caladea, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="32.801025"
+       y="75.370369"
+       id="text8425"><tspan
+         sodipodi:role="line"
+         id="tspan8423"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Caladea;-inkscape-font-specification:'Caladea, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.25"
+         x="32.801025"
+         y="75.370369">Stefan-Boltzmann-lampe</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Caladea;-inkscape-font-specification:'Caladea, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="114.29988"
+       y="92.236168"
+       id="text8429"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.25"
+         x="114.29988"
+         y="92.236168"
+         id="tspan8431">Sensor</tspan></text>
+  </g>
+</svg>
