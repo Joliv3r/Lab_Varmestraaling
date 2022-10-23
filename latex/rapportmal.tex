@@ -109,7 +109,7 @@ group-digits = false,
 \author{S.~Klyve}
 
 \begin{abstract}
-Stefan-Boltzmanns lov kan verifiseres ved å måle intensiteten til varmestrålingen til et varmt objekt som en lampe. Strålingen fra en Stefan-Boltzmann-lampe blir målt og det viser seg at intensiteten øker med $T^{4}$. I tillegg vises det at emisjon i forhold til et svart legeme fra et materiale ikke er avhengig av temperaturen ved å måle intensiteten i varmestråling fra forskjellige sider på Leslies kube. Begge disse forsøkene har feil i temperaturmålinger skylt at det ikke finnes noen nøyaktige måter å måle temperaturen på.
+Stefan-Boltzmanns lov kan verifiseres ved å måle intensiteten til varmestrålingen fra et varmt objekt som en lampe. Strålingen fra en Stefan-Boltzmann-lampe blir målt og det viser seg at intensiteten øker med $T^{4}$. I tillegg vises det at emisjon i forhold til et svart legeme fra et materiale ikke er avhengig av temperaturen ved å måle intensiteten i varmestråling fra forskjellige sider på Leslies kube. Begge disse forsøkene har feil i temperaturmålinger skylt at det ikke finnes noen nøyaktige måter å måle temperaturen på.
 \end{abstract}
 
 \end{frontmatter}
@@ -162,7 +162,7 @@ En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved å j
   \label{eq:Wheatstone}
   R_{x} = \frac{R_{3} R_{2}}{R_{1}}.
 \end{equation}
-Siden $R_{x}$ her vil referere til resistansen i resistoren i tillegg til i ledningene kan en finne resistansen i resistoren $R_{0}$ ved å kople den ut og finne resistansen i ledningene $R_{x0}$, og har dermed
+Siden $R_{x}$ her vil referere til resistansen i resistoren i tillegg til i ledningene kan en finne resistansen i resistoren $R_{0}$ ved å koble den ut og finne resistansen i ledningene $R_{x0}$, og har dermed
 \begin{equation}
   \label{eq:WheatstoneReal}
   R_{0} = R_{x} - R_{x0}.
@@ -177,7 +177,7 @@ Feilmarginen i $R_{0}$ kan da finnes ved Gauss feilforplantning
 
 
 \section{Metode}
-Dette forsøket omfatter i hovedsak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av en Leslies kube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved høye temperaturer.
+Dette forsøket omfatter i hovedsak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av Leslies kube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved høye temperaturer.
 
 
 \begin{figure}
@@ -200,7 +200,7 @@ Kobler opp utstyr som vist i \autoref{fig:SBlampe}. Setter spenningen til $\SI{1
 
 
 \section{Resultater}
-Ser først på dataen funnet ved Leslies kube som vist i \autoref{fig:LeslieResults}. Avlesninger av voltmeteret koblet til varmestrålingssensoren viser intensiteten og ved avlesninger av ohmmeteret finnes resistans og dermed temperatur ved avlesning av tabell. Siden temperaturen blir funnet ved avlesningfra tabell, finner vi laveste og høyeste feilmargin i temperatur ved å runde feilmarginen i resistans henholdsvis opp og ned.
+Ser først på dataen funnet ved Leslies kube som vist i \autoref{fig:LeslieResults}. Avlesninger av voltmeteret koblet til varmestrålingssensoren viser intensiteten og ved avlesninger av ohmmeteret finnes resistans og dermed temperatur ved avlesning av tabell. Siden temperaturen blir funnet ved avlesning fra tabell, finner vi laveste og høyeste feilmargin i temperatur ved å runde feilmarginen i resistans henholdsvis opp og ned.
 \begin{figure}
   \centering
   \includegraphics[width=0.4\textwidth]{../code/LC.pdf}
@@ -219,7 +219,7 @@ Videre er dataen for Stefan-Boltzmann-lampa vist i \autoref{fig:SBlampResults}. 
 
 
 \section{Diskusjon}
-Kan se i \autoref{fig:LeslieResults} at alle målingene ser ut til å følge en lik økning å fothold til hverandre med unntak av den hvite siden i siste måling. Vi forventet at intensiteten skulle følge likningen i \eqref{eq:SBepsilon} med varierende $\epsilon$ på de forskjellige sidene. Da ville målingene vært proporsjonale med $T^{4}$. Hvis vi tegner inn $\alpha T^{4}$ med $\alpha=\overline{U} / T^{4}$, hvor $\overline{U}$ er gjennomsnittet av de målte verdiene for intensiteten, får vi grafen vist i \autoref{fig:LeslieResFunc}. Her er det vanskelig å se om denne modellen passer, siden det er relativt liten forskjell på største og minste verdi for temperaturene som er målt.
+Kan se i \autoref{fig:LeslieResults} at alle målingene ser ut til å følge en lik økning å forhold til hverandre med unntak av den hvite siden i siste måling. Vi forventet at intensiteten skulle følge likningen i \eqref{eq:SBepsilon} med varierende $\epsilon$ på de forskjellige sidene. Da ville målingene vært proporsjonale med $T^{4}$. Hvis vi tegner inn $\alpha T^{4}$ med $\alpha=\overline{U} / T^{4}$, hvor $\overline{U}$ er gjennomsnittet av de målte verdiene for intensiteten, får vi grafen vist i \autoref{fig:LeslieResFunc}. Her er det vanskelig å se om denne modellen passer, siden det er relativt liten forskjell på største og minste verdi for temperaturene som er målt.
 
 \begin{figure}
   \centering
@@ -228,13 +228,13 @@ Kan se i \autoref{fig:LeslieResults} at alle målingene ser ut til å følge en 
   \label{fig:LeslieResFunc}
 \end{figure}
 
-Det kan finnes flere forklaringer på hvorfor de teoretiske modellene som vi forventet ikke skulle vises i dataen. En mulighet er at temperaturen vi måler for glødepæren ikke er lik overflaten. Gitt at vi ikke kan vente evig på termisk likevekt, vil det være en forskjell i disse temperaturene, og den forskjellen kan sikkert være stor nok til å gjøre betydelige utslag i dataen. Denne temperaturforskjellen kan hende øker med temperaturen også, slik at det vi måler ikke er helt proporsjonal med $T^{4}$.
+Det kan finnes flere forklaringer på hvorfor de teoretiske modellene som vi forventet ikke skulle vises i dataen. En mulighet er at temperaturen vi måler for glødepæren ikke er lik overflaten. Gitt at vi ikke kan vente evig på termisk likevekt, vil det være en forskjell i disse temperaturene, og den forskjellen kan være stor nok til å gjøre betydelige utslag i dataen. Denne temperaturforskjellen kan øke med temperaturen også, slik at det vi måler ikke er helt proporsjonal med $T^{4}$.
 
 Vi kan også tenke oss at siden denne temperaturen er så liten i forhold til romtemperaturen, kan det gjøre at varmestrålingen er liten i forhold til annen stråling som kan detekteres av sensoren, og dermed ikke vil øke med $T^{4}$. I dette tilfellet er hovedsaklig problemet at temperaturforskjellene er liten og det er dermed vanskelig å konkludere med noen proporsjonalitet.
 
-Vi kan så se på målingene i forhold til hverandre. Vi hadde regnet med at den svarte siden ville emittere mest stråling siden denne siden også vil absorbere mest stråling. Det som var uventet var at den hvite siden emitterte neste like mye som den svarte siden, ettersom vi vet at hvite objekter reflekterer alt synlig lys. Vi kan tenke oss at selv om dette er sant så vil i dette tilfelle varmestrålingen ikke være i form av synlig lys og det kan hende at den hvite siden absorberer denne bølgelengden nesten like godt som den svarte siden, og dermed emitterer omtrent like mye.
+Vi kan så se på målingene i forhold til hverandre. Vi hadde regnet med at den svarte siden ville emittere mest stråling siden denne siden også vil absorbere mest stråling. Det som var uventet var at den hvite siden emitterte nesten like mye som den svarte siden, ettersom vi vet at hvite objekter reflekterer alt synlig lys. Vi kan tenke oss at selv om dette er sant så vil i dette tilfelle varmestrålingen ikke være i form av synlig lys og det kan hende at den hvite siden absorberer denne bølgelengden nesten like godt som den svarte siden, og dermed emitterer omtrent like mye.
 
-Vi ser at det er en måling som er langt ganske langt unna den korresponderende målingen av den svarte siden. Dette kan være en målefeil, men det går også an å tenke seg at varmestrålingen i dette tilfellet begynner å nærme seg synlig lys, eller en annen bølgelengde som blir reflektert av hvitt og ikke svart. Dette virker ikke veldig sannsynlig siden vi vet at intensiteten i varmestrålingen skal øke med $T^{4}$, og at det derfor ikke gir mening at det er en stor plutselig forskjell i evnen til absorpsjon. En annen tanke er at det egentlig er en betydelig forskjell på disse målingene men at de ser små ut i forhold til alle de andre målingene vi har. Det kan også hende at det tar lenger å tid å varme opp visse sider av kuben og at dette fører til at hvit emitterer omtrent like mye stråling. Dette siste punktet er nok ikke spesielt sannsynlig siden vi til første måling lot det stå veldig lenge og vi ser at første måling også er veldig like.
+Vi ser at det er en måling som er ganske langt unna den korresponderende målingen av den svarte siden. Dette kan være en målefeil, men en kan også tenke seg at varmestrålingen i dette tilfellet begynner å nærme seg synlig lys, eller en annen bølgelengde som blir reflektert av hvitt og ikke svart. Dette virker ikke veldig sannsynlig siden vi vet at intensiteten i varmestrålingen skal øke med $T^{4}$, og at det derfor ikke gir mening at det er en stor plutselig forskjell i evnen til absorpsjon. En annen tanke er at det egentlig er en betydelig forskjell på disse målingene men at de ser små ut i forhold til alle de andre målingene vi har. Det kan også hende at det tar lenger å tid å varme opp visse sider av kuben og at dette fører til at hvit emitterer omtrent like mye stråling. Dette siste punktet er nok ikke spesielt sannsynlig siden vi ved første måling lot det stå veldig lenge og vi ser at første måling også er veldig like.
 
 \begin{table}
   \centering
@@ -252,7 +252,7 @@ Vi ser at det er en måling som er langt ganske langt unna den korresponderende 
   \label{tab:LeslieEmisjonsevne}
 \end{table}
 
-Som forventet er det den blanke aluminiumssiden som emitterer minst, da dette omtrent er et speil og vil dermed reflektere omtrent all stråling. I tillegg vet vi at aluminium reflekterer mye stråling fra før av, noe vi også kan se ved at den upolerte aluminiumssiden også emitterer ganske lite, men likevel en del mere enn den blankpolerte. For å finne emisjonskonstanter for upolert og blankpolert aluminium kan det antas at den svarte siden er tilnærmet et svart legeme og vil dermed ha $\epsilon = 1$. Får da \autoref{tab:LeslieEmisjonsevne}. Her er det regnet ut $\epsilon = j/j_{b}$ hvor $j_{b}$ er strålingen fra den svarte siden da vi antar dette er et svart legeme. Feilmarginen er funnet ved Gauss feilforplantning og å finne ekstremalverdiene med feilmarginer for de ulike målingene.
+Som forventet er det den blanke aluminiumssiden som emitterer minst, da dette omtrent er et speil og vil dermed reflektere omtrent all stråling. I tillegg vet vi at aluminium reflekterer mye stråling fra før av, noe vi også kan se ved at den upolerte aluminiumssiden også emitterer ganske lite, men likevel en del mere enn den blankpolerte. For å finne emisjonskonstanter for upolert og blankpolert aluminium kan det antas at den svarte siden er tilnærmet et svart legeme og vil dermed ha $\epsilon = 1$. Får da \autoref{tab:LeslieEmisjonsevne}. Her er det regnet ut $\epsilon = j/j_{b}$ hvor $j_{b}$ er strålingen fra den svarte siden da vi antar dette er et svart legeme. Feilmarginen er funnet ved Gauss feilforplantning og ved å finne ekstremalverdiene med feilmarginer for de ulike målingene.
 
 \begin{figure}
   \centering
