@@ -109,7 +109,7 @@ group-digits = false,
 \author{S.~Klyve}
 
 \begin{abstract}
-Stefan-Boltzmanns lov kan verifiseres ved å måle intensiteten til varmestrålingen til et varmt objekt som en lampe. Strålingen fra en Stefan-Boltzmann-lampe blir målt og det viser seg at intensiteten øker med $T^{4}$. I tillegg vises det at emisjon i forhold til et svart legeme fra et materiale ikke er avhengig av temperaturen ved å måle intensiteten i varmestråling fra forskjellige siden på Leslies kube. Begge disse forsøkene har feil i temperaturmålinger skylt at det ikke finnes noen nøyaktige måter å måle temperaturen på.
+Stefan-Boltzmanns lov kan verifiseres ved å måle intensiteten til varmestrålingen til et varmt objekt som en lampe. Strålingen fra en Stefan-Boltzmann-lampe blir målt og det viser seg at intensiteten øker med $T^{4}$. I tillegg vises det at emisjon i forhold til et svart legeme fra et materiale ikke er avhengig av temperaturen ved å måle intensiteten i varmestråling fra forskjellige sider på Leslies kube. Begge disse forsøkene har feil i temperaturmålinger skylt at det ikke finnes noen nøyaktige måter å måle temperaturen på.
 \end{abstract}
 
 \end{frontmatter}
@@ -117,12 +117,6 @@ Stefan-Boltzmanns lov kan verifiseres ved å måle intensiteten til varmestråli
 
 \section{Introduksjon}
 Stefan-Boltzmanns lov er en viktig relasjon i fysikken, som forbinder emittert varmeenergi  fra et svart legeme, med dets temperatur. Den ble først formulert av Joseph Stefan i 1879, og utledet av Ludwig Boltzmann fem år senere (INSERT KILDE). I dette forsøket skal vi studere emissiviteten til ulike overflater ved ulike temperaturer, i tillegg til å verifisere Stefan-Boltzmanns lov ved å sjekke forholdet mellom temperatur og emittert varme fra et objekt.
-
-
-Her begynner den egentlige rapporten. Mer informasjon om hva de enkelte delene av rapporten skal inneholde finnes på nettsiden til laben~\cite{labside}. På slutten av forrige setning ser vi et eksempel på en referanse. Her er et eksempel på en referanse til læreboka~\cite{Young2016}. Referanselisten kommer til slutt i rapporten. I denne malen har vi brukt \textsc{Bib}\TeX\ til å formatere referansene, men det er også mulig å formatere dem manuelt direkte i \texttt{tex}-filen. 
-% BibTeX er det programmet som tradisjonelt brukes til automatisert referansehåndtering i LaTeX. Den mest moderne måten å håndtere referanser på er pakken biblatex, men den kan ikke brukes sammen med elsarticle.
-
-
 
 \section{Teori}
 Et svart legeme er et objekt som absorberer all innkommende strålingsenergi, uavhengig av bølgelengden. Dersom objektet er i termisk likevekt, blir det totalt sett hverken tilført eller avgitt energi. Det vil si at objektet må emittere like mye stråling som det absorberer for å oppnå likevekt. For et svart legeme betyr dette at den emitterte strålingsenergien er lik den absorberte. Forholdet mellom den emitterte effekten per flateenhet, $j$, og det svarte legemets temperatur er gitt ved Stefan-Boltzmanns lov:
@@ -163,12 +157,12 @@ Her er $\alpha=\SI{4,5e-3}{\kelvin^{-1}}$ temperaturkoeffisienten til wolfram. $
   \label{fig:Wheatstone}
 \end{figure}
 
-En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved å justere resistansene vist i \autoref{fig:Wheatstone} til strømmen gjennom $G$ er 0, så kan en ved Krichoffs lover finne resistansen
+En Wheatstonebro kan brukes til å måle nøyaktig motstand i en krets. Ved å justere resistansene vist i \autoref{fig:Wheatstone} til strømmen gjennom $G$ er 0, så kan en ved Kirchhoffs lover finne resistansen
 \begin{equation}
   \label{eq:Wheatstone}
   R_{x} = \frac{R_{3} R_{2}}{R_{1}}.
 \end{equation}
-Siden $R_{x}$ her vil referere til resistansen i resistoren i tillegg til i ledningene kan en finne resistansen i resistoren $R_{0}$ ved å kople den ut og finne resistansen i ledningene $R_{x0}$ og har dermed
+Siden $R_{x}$ her vil referere til resistansen i resistoren i tillegg til i ledningene kan en finne resistansen i resistoren $R_{0}$ ved å kople den ut og finne resistansen i ledningene $R_{x0}$, og har dermed
 \begin{equation}
   \label{eq:WheatstoneReal}
   R_{0} = R_{x} - R_{x0}.
@@ -183,7 +177,7 @@ Feilmarginen i $R_{0}$ kan da finnes ved Gauss feilforplantning
 
 
 \section{Metode}
-Dette forsøket omfatter i hovedsak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av en Leslies kube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved varme temperaturer.
+Dette forsøket omfatter i hovedsak to ulike deler; først å undersøke emissivitet til ulike overflater ved ulike temperaturer ved bruk av en Leslies kube, og deretter verifisere Stefan-Boltzmann lov ved å måle emittert varmestråling fra en lampe ved høye temperaturer.
 
 
 \begin{figure}
@@ -193,12 +187,12 @@ Dette forsøket omfatter i hovedsak to ulike deler; først å undersøke emissiv
   \label{fig:Leslikube}
 \end{figure}
 
-For Leslies kube kobles utstyret opp som vist i \autoref{fig:Leslikube} og skrur på lampen i Leslies kuben på høy intesitet først før den skrus ned når ohmmeteteret viser omtrent $\SI{40}{\kilo\ohm}$ før intensiteten skrus ned. Venter så til det oppnås en form for termisk likevekt og måler så varmestråling ved å lese av voltmeteret koblet til sensoren på hver av de fire sidene og skrur så opp intensiteten, venter i omtrent fem minutter til det er tilnærmet termisk likevekt og måler så varmestråling på nytt. Gjør dette fire ganger.
+For Leslies kube kobles utstyret opp som vist i \autoref{fig:Leslikube}. Skrur på lampen i Leslies kube på høy intesitet først, før den skrus ned når ohmmeteteret viser omtrent $\SI{40}{\kilo\ohm}$. Venter så til det oppnås en form for termisk likevekt, og måler varmestråling ved å lese av voltmeteret koblet til sensoren på hver av de fire sidene. Skrur deretter opp intensiteten, venter i omtrent fem minutter til det er tilnærmet termisk likevekt og måler varmestråling på nytt. Gjør dette fire ganger for ulike intensiteter.
 
 \begin{figure}
   \centering
   \includegraphics[width=0.4\textwidth]{figures/lampe.pdf}
-  \caption{Utstyrsoppsett. Kobler et voltmeter paralelt med Stefan-Boltzmann-lampen i en krets med et ammeter og en spenningskilde som kobles til et strømuttak. Kobler et voltmeter til sensoren.}
+  \caption{Utstyrsoppsett. Kobler et voltmeter parallelt med Stefan-Boltzmann-lampen i en krets med et ammeter og en spenningskilde som kobles til et strømuttak. Kobler et voltmeter til sensoren.}
   \label{fig:SBlampe}
 \end{figure}
 
@@ -206,8 +200,7 @@ Kobler opp utstyr som vist i \autoref{fig:SBlampe}. Setter spenningen til $\SI{1
 
 
 \section{Resultater}
-Ser først på dataen funnet ved Leslies kube som vist i \autoref{fig:LeslieResults}. Avlesninger av voltmeteret koblet til varmestrålingssensoren viser intensiteten og ved avlesninger av ohmmeteret finnes resistans og dermed temperatur ved avlesning av tabell. Siden temperaturen finnes ved avlesning av tabell finnes nederste og øverste grense ved avlesning av laveste resistans som kan slås opp høyere enn høyeste verdi i feilmarginintervallet, og motsatt for lavere.
-
+Ser først på dataen funnet ved Leslies kube som vist i \autoref{fig:LeslieResults}. Avlesninger av voltmeteret koblet til varmestrålingssensoren viser intensiteten og ved avlesninger av ohmmeteret finnes resistans og dermed temperatur ved avlesning av tabell. Siden temperaturen blir funnet ved avlesningfra tabell, finner vi laveste og høyeste feilmargin i temperatur ved å runde feilmarginen i resistans henholdsvis opp og ned.
 \begin{figure}
   \centering
   \includegraphics[width=0.4\textwidth]{../code/LC.pdf}
@@ -215,7 +208,7 @@ Ser først på dataen funnet ved Leslies kube som vist i \autoref{fig:LeslieResu
   \label{fig:LeslieResults}
 \end{figure}
 
-Videre er dataen for Stefan-Boltzmann-lampa vist i \autoref{fig:SBlampResults}. Ved avlesninger av voltmeteret koblet til sensoren finnes intensiteten og temperatur er funnet ved avlesning av resistans og ved å lese av tabell. Usikkerheten i temperaturen kommer av måleusikkerheten i resistansen og usikkerheten i resistansen ved romtemperatur som vist i \eqref{eq:ErrorRelRes}. Bruker samme metode for å finne feilmarginer som ved Leslies kube.
+Videre er dataen for Stefan-Boltzmann-lampa vist i \autoref{fig:SBlampResults}. Ved avlesninger av voltmeteret koblet til sensoren finner vi intensiteten, og temperatur er funnet ved avlesning av resistans og ved å lese av tabell. Usikkerheten i temperaturen kommer av måleusikkerheten i resistansen og usikkerheten i resistansen ved romtemperatur som vist i \eqref{eq:ErrorRelRes}. Bruker samme metode for å finne feilmarginer som ved Leslies kube.
 
 \begin{figure}
   \centering
@@ -226,7 +219,7 @@ Videre er dataen for Stefan-Boltzmann-lampa vist i \autoref{fig:SBlampResults}. 
 
 
 \section{Diskusjon}
-Kan se i \autoref{fig:LeslieResults} at alle målingene ser ut til å følge en lik økning å fothold til hverandre med unntak av den hvite siden i siste måling. Vi forventet at intensiteten skulle følge likningen i \eqref{eq:SBepsilon} med varierende $\epsilon$ på de forskjellige sidene. Da ville målingene vært proporsjonale med $T^{4}$, hvis vi tegner inn $\alpha T^{4}$ med $\alpha=\overline{U} / T^{4}$, hvor $\overline{U}$ er gjennomsnittet av de målte verdiene for intensiteten, får vi grafen vist i \autoref{fig:LeslieResFunc}. Her er det vanskelig å se om denne modellen passer siden det er relativt liten forskjell på største og minste verdi for temperaturene som er målt.
+Kan se i \autoref{fig:LeslieResults} at alle målingene ser ut til å følge en lik økning å fothold til hverandre med unntak av den hvite siden i siste måling. Vi forventet at intensiteten skulle følge likningen i \eqref{eq:SBepsilon} med varierende $\epsilon$ på de forskjellige sidene. Da ville målingene vært proporsjonale med $T^{4}$. Hvis vi tegner inn $\alpha T^{4}$ med $\alpha=\overline{U} / T^{4}$, hvor $\overline{U}$ er gjennomsnittet av de målte verdiene for intensiteten, får vi grafen vist i \autoref{fig:LeslieResFunc}. Her er det vanskelig å se om denne modellen passer, siden det er relativt liten forskjell på største og minste verdi for temperaturene som er målt.
 
 \begin{figure}
   \centering
@@ -235,13 +228,13 @@ Kan se i \autoref{fig:LeslieResults} at alle målingene ser ut til å følge en 
   \label{fig:LeslieResFunc}
 \end{figure}
 
-Det kan finnes flere forklaringer på hvorfor de teoretiske modellene som vi forventet ikke skulle vises i dataen. Noe som kan hende er at siden vi måler temperaturen ved resistans i en glødepære inne i kuben vil temperaturen vi finner være for glødepæren, men muligens ikke for overflaten på kuben og da kan det hende at systemet inne i kuben ikke er kommet i termisk likevekt og at temperaturen dermed ikke realistisk er det samme som den vi måler. Det kan hende at denne temperaturforskjellen øker med temperaturen vi måler og at målingene derfor ikke er proporsjonal med $T^{4}$.
+Det kan finnes flere forklaringer på hvorfor de teoretiske modellene som vi forventet ikke skulle vises i dataen. En mulighet er at temperaturen vi måler for glødepæren ikke er lik overflaten. Gitt at vi ikke kan vente evig på termisk likevekt, vil det være en forskjell i disse temperaturene, og den forskjellen kan sikkert være stor nok til å gjøre betydelige utslag i dataen. Denne temperaturforskjellen kan hende øker med temperaturen også, slik at det vi måler ikke er helt proporsjonal med $T^{4}$.
 
-Vi kan også tenke oss at siden denne temperaturen er så liten i forhold til romtemperaturen kan det gjøre at varmestrålingen er liten i forhold til annen stråling som kan detekteres av sensoren og dermed ikke vil øke med $T^{4}$, men i dette tilfellet er hovedsaklig problemet at temperaturforskjellene er liten og det er dermed vanskelig å konkludere med noen proporsjonalitet.
+Vi kan også tenke oss at siden denne temperaturen er så liten i forhold til romtemperaturen, kan det gjøre at varmestrålingen er liten i forhold til annen stråling som kan detekteres av sensoren, og dermed ikke vil øke med $T^{4}$. I dette tilfellet er hovedsaklig problemet at temperaturforskjellene er liten og det er dermed vanskelig å konkludere med noen proporsjonalitet.
 
-Vi kan så se på målingene i forhold til hverandre. Vi hadde regnet med at den svarte siden ville emittere mest stråling siden denne siden også vil absorbere mest stråling. Det som var uventet var at den hvite siden emitterte neste like mye som den svarte siden, ettersom vi vet at hvite objekter reflekterer alt synlig lys. Vi kan tenke oss at selv om dette er sant så vil i dette tilfelle varmestrålingen ikke være i form av synlig lys og det kan hende at den hvite siden absorberer denne bølgelengden nesten like godt som den svarte siden og dermed emitterer omtrent like mye.
+Vi kan så se på målingene i forhold til hverandre. Vi hadde regnet med at den svarte siden ville emittere mest stråling siden denne siden også vil absorbere mest stråling. Det som var uventet var at den hvite siden emitterte neste like mye som den svarte siden, ettersom vi vet at hvite objekter reflekterer alt synlig lys. Vi kan tenke oss at selv om dette er sant så vil i dette tilfelle varmestrålingen ikke være i form av synlig lys og det kan hende at den hvite siden absorberer denne bølgelengden nesten like godt som den svarte siden, og dermed emitterer omtrent like mye.
 
-Vi ser at det er en måling som er langt ganske langt unna den korresponderende målingen av den svarte siden. Dette kan være en målefeil, men kan tenke seg at i dette tilfellet begynner varmestrålingen å nærme seg synlig lys eller en annen bølgelengde som blir reflektert av hvitt og ikke svart. Dette virker ikke veldig sannsynlig siden vi vet at intensiteten i varmestrålingen skal øke med $T^{4}$ og det derfor ikke gir mening at det er en stor plutselig forskjell i evnen til absorpsjon. En annen tanke er at det egentlig er en betydelig forskjell på disse målingene men at de ser små ut i forhold til alle de andre målingene vi har. Det kan også hende at det tar lenger å tid å varme opp visse sider av kuben og at dette fører til at hvit emitterer omtrent like mye stråling. Dette siste punktet er nok ikke spesielt sannsynlig siden vi til første måling lot det stå veldig lenge og vi ser at første måling også er veldig like.
+Vi ser at det er en måling som er langt ganske langt unna den korresponderende målingen av den svarte siden. Dette kan være en målefeil, men det går også an å tenke seg at varmestrålingen i dette tilfellet begynner å nærme seg synlig lys, eller en annen bølgelengde som blir reflektert av hvitt og ikke svart. Dette virker ikke veldig sannsynlig siden vi vet at intensiteten i varmestrålingen skal øke med $T^{4}$, og at det derfor ikke gir mening at det er en stor plutselig forskjell i evnen til absorpsjon. En annen tanke er at det egentlig er en betydelig forskjell på disse målingene men at de ser små ut i forhold til alle de andre målingene vi har. Det kan også hende at det tar lenger å tid å varme opp visse sider av kuben og at dette fører til at hvit emitterer omtrent like mye stråling. Dette siste punktet er nok ikke spesielt sannsynlig siden vi til første måling lot det stå veldig lenge og vi ser at første måling også er veldig like.
 
 \begin{table}
   \centering
@@ -259,7 +252,7 @@ Vi ser at det er en måling som er langt ganske langt unna den korresponderende 
   \label{tab:LeslieEmisjonsevne}
 \end{table}
 
-Som forventet er den blanke aluminiumssiden som emitterer minst da dette omtrent er et speil og vil dermed reflektere omtrent all stråling. I tillegg vet vi at aluminium reflekterer mye stråling fra før av, noe vi også kan se ved at den upolerte aluminiumssiden også emitterer ganske lite, men likevel en del mere enn den blankpolerte. For å finne emisjonskonstanter for upolert og blankpolert aluminium kan det antas at den svarte siden er tilnærmet et svart legeme og vil dermed ha $\epsilon = 1$ og får da \autoref{tab:LeslieEmisjonsevne}. Her er det regnet ut $\epsilon = j/j_{b}$ hvor $j_{b}$ er strålingen fra den svarte siden da vi antar dette er et svart legeme. Feilmarginen er funnet ved Gauss feilforplantning og så finne ekstremalverdiene med feilmarginer for de ulike målingene.
+Som forventet er det den blanke aluminiumssiden som emitterer minst, da dette omtrent er et speil og vil dermed reflektere omtrent all stråling. I tillegg vet vi at aluminium reflekterer mye stråling fra før av, noe vi også kan se ved at den upolerte aluminiumssiden også emitterer ganske lite, men likevel en del mere enn den blankpolerte. For å finne emisjonskonstanter for upolert og blankpolert aluminium kan det antas at den svarte siden er tilnærmet et svart legeme og vil dermed ha $\epsilon = 1$. Får da \autoref{tab:LeslieEmisjonsevne}. Her er det regnet ut $\epsilon = j/j_{b}$ hvor $j_{b}$ er strålingen fra den svarte siden da vi antar dette er et svart legeme. Feilmarginen er funnet ved Gauss feilforplantning og å finne ekstremalverdiene med feilmarginer for de ulike målingene.
 
 \begin{figure}
   \centering
@@ -268,20 +261,18 @@ Som forventet er den blanke aluminiumssiden som emitterer minst da dette omtrent
   \label{fig:LesliesEmissivity}
 \end{figure}
 
-Kan også ved å se på \autoref{fig:LesliesEmissivity} at emissiviteten ser uavhengig ut fra temperaturen, med unntak fra siste måling på hvit side, noe vi ville forventet fra teorien. Igjen ser en at den hvite siden opptrer veldig likt som et svart legeme, noe som ikke virker intuitivt. Ser også at dermed en ser bort ifra siste måling på hvit side får en $\epsilon = \SI{0.99(2)}{}$. Dette er overraskende nærme et svart legeme, men har også en feilmargin som gir en mulig verdi $\epsilon > 1$, noe som ikke er mulig. Siden det er antatt at den svarte siden kan ses på som et perfekt svart legeme, noe som ikke er riktig, så gir det mulig mening at dette kan skje. Her kan det muligens også ha noe å si at de forskjellige sidene på kuben varmes opp på ulik tid og dermed kan temperaturen være forskjellige på de forskjellige sidene.
+Kan også ved å se på \autoref{fig:LesliesEmissivity} at emissiviteten ser uavhengig ut fra temperaturen, med unntak fra siste måling på hvit side, noe vi ville forventet fra teorien. Igjen ser en at den hvite siden opptrer veldig likt som et svart legeme, noe som ikke virker intuitivt. Ser også at dersom en ser bort ifra siste måling på hvit side får en $\epsilon = \SI{0.99(2)}{}$. Dette er overraskende nærme et svart legeme, men har også en feilmargin som gir en mulig verdi $\epsilon > 1$, noe som ikke er mulig. Siden det er antatt at den svarte siden kan ses på som et perfekt svart legeme, noe som ikke er riktig, så gir det mulig mening at dette kan skje. Her kan det muligens også ha noe å si at de forskjellige sidene på kuben varmes opp på ulik tid og dermed kan temperaturen være forskjellige på de forskjellige sidene.
 
 Målet med andre del av forsøket var å vise Stefan-Boltzmanns lov. Ser i \autoref{fig:SBlampResults} at proporsjonaliteten mellom intensitet og $T^4$ stemmer godt. Proporsjonalitetskonstanten er basert på et gjennomsnitt av forholdet mellom målt intensitet og $T^4$. Grunnen til at det ikke ble brukt en prefaktor på $\epsilon \sigma$ har med at intensiteten er målt i mV. Det er ikke nødvendig å gjøre om enhetene for å vise proporsjonalitet, og har heller ikke blitt gjort i denne utredningen. Resultatene viser uansett at en kurve proporsjonal med $T^4$ passer relativt godt til måleverdiene for intensiteten.
 
-Det at lampen når såpass høye temperaturer som rundt 3000K medbringer både fordeler og ulemper. Fordelaktig er det at lampen har høy temperatur i forhold til omgivelsene, som fører til mindre bråk i måling av strålingsintensiteten til lampen. Dette bidrar til å bedre kunne verifisere Stefan-Boltzmanns lov, fordi proporsjonaliteten blir tydeligere ved økt nøyaktighet i målingene.
-
-På den andre siden er det utfordrende å faktisk måle høye temperaturer med høy nøyaktighet. I teoridelen ble det diskutert at temperaturkoeffisienten  $\alpha$ til wolfram endrer seg ved høye temperaturer. Dette gjør det for vanskelig å finne temperaturen ved regning, slik at vi måtte bruke relativ resitans som forklart i teoridelen.
+Det at lampen når såpass høye temperaturer som rundt 3000 K medbringer både fordeler og ulemper. Fordelaktig er det at lampen har høy temperatur i forhold til omgivelsene, som fører til mindre bråk i måling av strålingsintensiteten til lampen. Dette bidrar til å bedre kunne verifisere Stefan-Boltzmanns lov, fordi proporsjonaliteten blir tydeligere ved økt nøyaktighet og mindre bråk i målingene. På den andre siden er det utfordrende å faktisk måle høye temperaturer med høy nøyaktighet. I teoridelen ble det diskutert at temperaturkoeffisienten  $\alpha$ til wolfram endrer seg ved høye temperaturer. Dette gjør det for vanskelig å finne temperaturen ved regning, slik at vi måtte bruke relativ resitans som forklart i teoridelen.
 
 Ved å bruke tabellverdier blir behandling av feilmargin litt annerledes. Siden tabellen for temperaturer opererer med diskrete intervall på relativ resistans, vil feilmarginen i temperatur ligge mellom to tabellverdier. Ved å bruke minste og største relative motstand fra feilanalysen, kan vi runde henholdsvis ned og opp for å finne minste og største mulige temperatur med den aktuelle målefeilen i relativ resistans, som kan regnes ut ved \eqref{eq:ErrorRelRes}. 
 
 Denne feilmarginen ser vi reflektert i de blå punktene i \autoref{fig:SBlampResults}, og det oransje estimatet passer stort sett i disse feilmarginsintervallene. En enkel forklaring på dette kan være at proporsjonalitetskontanten vi har brukt ikke er optimal til målingene. Det er uansett tydelig at intensiteten vokser i takt med $T^4$, som er riktig i forhold til Stefan-Boltzmanns lov.
 
 \section{Konklusjon}
-Det ble vist at Stefan-Boltzmanns lov ser ut til å holde for dette tilfellet. Har sett at feilmarginene kunne bli relativt store, noe som kunne vært med på å gi et resultat en ikke kunne ha konkludert med noe ifra, men her ser en til tross for dette at det er en tydelig proporsjonalitet med $T^{4}$. Det er også vist at den relative emisjonsevnen til et materiale ikke er endret ved temperatur. Her finnes også målinger som strider mot dette, men det er så ekstreme verdier at de kan ses bort ifra.
+Det ble vist at Stefan-Boltzmanns lov ser ut til å holde for dette tilfellet. Har sett at feilmarginene kunne bli relativt store, noe som kunne vært med på å gi et resultat en ikke kunne ha konkludert med noe ifra, men her ser en til tross for dette at det er en tydelig proporsjonalitet med $T^{4}$. Det er også vist at den relative emisjonsevnen til et materiale ikke er endret ved temperatur. Her finnes også målinger som strider mot dette, men det er i ytterpunktene av målingene, og motvirker i liten grad det totale inntrykket.
 
 % Her kommer referanselisten
 \begingroup
